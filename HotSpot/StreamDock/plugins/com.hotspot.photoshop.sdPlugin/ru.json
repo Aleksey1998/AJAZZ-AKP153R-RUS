@@ -1,0 +1,134 @@
+{
+  "Description": "Это набор горячих клавиш для Photoshop",
+  "Name": "Photoshop",
+  "Category": "Photoshop",
+  
+  "com.hotspot.streamdock.hotkey.ps.blur": {
+    "Name": "Размытие",
+    "Tooltip": "Горячие клавиши инструмента «Размытие» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.brush": {
+    "Name": "Кисть",
+    "Tooltip": "Горячие клавиши инструмента «Кисть» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.canvassize": {
+    "Name": "Размер холста",
+    "Tooltip": "Горячие клавиши изменения размера холста в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.colorbalance": {
+    "Name": "Цветовой баланс",
+    "Tooltip": "Горячие клавиши коррекции цветового баланса в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.colorgradation": {
+    "Name": "Уровни",
+    "Tooltip": "Горячие клавиши коррекции уровней в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.colorsaturation": {
+    "Name": "Насыщенность",
+    "Tooltip": "Горячие клавиши изменения насыщенности цвета в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.curve": {
+    "Name": "Кривые",
+    "Tooltip": "Горячие клавиши коррекции кривых в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.cutting": {
+    "Name": "Обрезка",
+    "Tooltip": "Горячие клавиши инструмента «Обрезка» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.decolorization": {
+    "Name": "Деколоризация",
+    "Tooltip": "Горячие клавиши удаления цвета в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.gradient": {
+    "Name": "Градиент",
+    "Tooltip": "Горячие клавиши инструмента «Градиент» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.handgrip": {
+    "Name": "Рука",
+    "Tooltip": "Горячие клавиши инструмента «Рука» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.historybrush": {
+    "Name": "Кисть истории",
+    "Tooltip": "Горячие клавиши инструмента «Кисть истории» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.inversion": {
+    "Name": "Инверсия",
+    "Tooltip": "Горячие клавиши инверсии изображения в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.lasso": {
+    "Name": "Лассо",
+    "Tooltip": "Горячие клавиши инструмента «Лассо» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.layergroup": {
+    "Name": "Группа слоёв",
+    "Tooltip": "Горячие клавиши создания группы слоёв в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.layermerging": {
+    "Name": "Слияние слоёв",
+    "Tooltip": "Горячие клавиши слияния слоёв в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.magicwand": {
+    "Name": "Волшебная палочка",
+    "Tooltip": "Горячие клавиши инструмента «Волшебная палочка» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.annotation": {
+    "Name": "Примечания",
+    "Tooltip": "Горячие клавиши добавления примечаний в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.move": {
+    "Name": "Перемещение",
+    "Tooltip": "Горячие клавиши инструмента «Перемещение» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.newlayer": {
+    "Name": "Новый слой",
+    "Tooltip": "Горячие клавиши создания нового слоя в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.path": {
+    "Name": "Контур",
+    "Tooltip": "Горячие клавиши работы с контурами в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.pen": {
+    "Name": "Перо",
+    "Tooltip": "Горячие клавиши инструмента «Перо» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.rectangularmarquee": {
+    "Name": "Прямоугольное выделение",
+    "Tooltip": "Горячие клавиши прямоугольного выделения в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.repair": {
+    "Name": "Заплатка",
+    "Tooltip": "Горячие клавиши инструмента «Заплатка» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.round": {
+    "Name": "Округление",
+    "Tooltip": "Горячие клавиши округления в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.eraser": {
+    "Name": "Ластик",
+    "Tooltip": "Горячие клавиши инструмента «Ластик» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.scale": {
+    "Name": "Масштабирование",
+    "Tooltip": "Горячие клавиши масштабирования в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.seal": {
+    "Name": "Штамп",
+    "Tooltip": "Горячие клавиши инструмента «Штамп» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.slice": {
+    "Name": "Слайс",
+    "Tooltip": "Горячие клавиши инструмента «Слайс» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.sponge": {
+    "Name": "Губка",
+    "Tooltip": "Горячие клавиши инструмента «Губка» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.straw": {
+    "Name": "Пипетка",
+    "Tooltip": "Горячие клавиши инструмента «Пипетка» в Photoshop"
+  },
+  "com.hotspot.streamdock.hotkey.ps.text": {
+    "Name": "Текст",
+    "Tooltip": "Горячие клавиши инструмента «Текст» в Photoshop"
+  }
+}

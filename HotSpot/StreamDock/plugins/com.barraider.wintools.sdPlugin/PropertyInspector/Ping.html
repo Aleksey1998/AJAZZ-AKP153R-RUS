@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Ping Settings</title>
+    <link rel="stylesheet" href="Resources/sdpi.css">
+    <script src="Resources/sdtools.common.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Для обратной связи напишите на <span class="linkspan" onclick="openWebsite()">https://BarRaider.com</span></summary>
+        </details>
+        <div class="sdpi-item" id="dvServerName">
+            <div class="sdpi-item-label">Сервер/IP</div>
+            <input class="sdpi-item-value sdProperty" placeholder="google.com" value="" id="serverName">
+            <button class="max100 leftMargin0" onclick="setSettings()">Save</button>
+        </div>
+        <div class="sdpi-item" id="dvServerName">
+            <div class="sdpi-item-label">Название сервера</div>
+            <input class="sdpi-item-value sdProperty" placeholder="Google" value="" id="serverTitle" oninput="setSettings()">
+        </div>
+        <div class="sdpi-item" id="dvFrequency">
+            <div class="sdpi-item-label">Частоты (ms)</div>
+            <input class="sdpi-item-value sdProperty" placeholder="1000" value="" id="pingFrequency" oninput="setSettings()">
+        </div>
+        <div class="sdpi-item" id="dvLatency">
+            <div class="sdpi-item-label">Нормальная задержка</div>
+            <input class="sdpi-item-value sdProperty" id="normalLatency" inputmode="numeric" pattern="[0-9]*" type="number" placeholder="40" oninput="setSettings()">
+        </div>
+        <div class="sdpi-item" id="dvWebsite">
+            <div class="sdpi-item-label">URL при долгом нажатии</div>
+            <input class="sdpi-item-value sdProperty" placeholder="https://google.com" value="" id="website" oninput="setSettings()">
+        </div>
+        <details class="message">
+            <summary>`URL при долгом нажатии` позволяет вам задать веб-сайт, на который будет осуществляться переход при нажатии клавиши в течение ~1 секунды.</summary>
+        </details>
+        <div class="sdpi-item" id="dvLowLatency">
+            <div class="sdpi-item-label">Изображение с низкой задержкой</div>
+            <div class="sdpi-item-group file" id="filepickergroup">
+                <input class="sdpi-item-value sdProperty sdFile" type="file" id="lowImage" accept=".jpg, .jpeg, .png, .ico, .gif, .bmp, .tiff" oninput="setSettings()">
+                <label class="sdpi-file-info " for="lowImage" id="lowImageFilename">Нет файла...</label>
+                <label class="sdpi-file-label" for="lowImage">Выбрать файл...</label>
+            </div>
+        </div>
+        <div class="sdpi-item" id="dvHighLatency">
+            <div class="sdpi-item-label">Изображение с высокой задержкой</div>
+            <div class="sdpi-item-group file" id="filepickergroup">
+                <input class="sdpi-item-value sdProperty sdFile" type="file" id="highImage" accept=".jpg, .jpeg, .png, .ico, .gif, .bmp, .tiff" oninput="setSettings()">
+                <label class="sdpi-file-info " for="highImage" id="highImageFilename">Нет файла...</label>
+                <label class="sdpi-file-label" for="highImage">Выберите файл...</label>
+            </div>
+        </div>
+        <div class="sdpi-item" id="dvTimeoutImage">
+            <div class="sdpi-item-label">Таймаут изображение</div>
+            <div class="sdpi-item-group file" id="filepickergroup">
+                <input class="sdpi-item-value sdProperty sdFile" type="file" id="timeoutImage" accept=".jpg, .jpeg, .png, .ico, .gif, .bmp, .tiff" oninput="setSettings()">
+                <label class="sdpi-file-info " for="timeoutImage" id="timeoutImageFilename">Нет файла...</label>
+                <label class="sdpi-file-label" for="timeoutImage">Выберите файл...</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

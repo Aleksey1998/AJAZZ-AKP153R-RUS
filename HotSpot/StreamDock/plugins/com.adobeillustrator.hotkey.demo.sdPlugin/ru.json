@@ -1,0 +1,150 @@
+{
+  "Description": "Это набор горячих клавиш для Adobe Illustrator",
+  "Name": "Действия AI",
+  "Category": "Действия AI",
+  
+  "com.hotspot.streamdock.hotkey.ai.select": {
+    "Name": "Выделение",
+    "Tooltip": "Горячие клавиши выделения в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.directselection": {
+    "Name": "Прямое выделение",
+    "Tooltip": "Горячие клавиши прямого выделения в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.magicwand": {
+    "Name": "Волшебная палочка",
+    "Tooltip": "Горячие клавиши инструмента «Волшебная палочка» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.lasso": {
+    "Name": "Лассо",
+    "Tooltip": "Горячие клавиши инструмента «Лассо» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.pen": {
+    "Name": "Перо",
+    "Tooltip": "Горячие клавиши инструмента «Перо» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.anchorpoint": {
+    "Name": "Узловая точка",
+    "Tooltip": "Горячие клавиши работы с узловыми точками в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.curvature": {
+    "Name": "Кривизна",
+    "Tooltip": "Горячие клавиши инструмента «Кривизна» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.type": {
+    "Name": "Текст",
+    "Tooltip": "Горячие клавиши инструмента «Текст» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.touchtype": {
+    "Name": "Редактирование текста",
+    "Tooltip": "Горячие клавиши инструмента «Touch Type» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.linesegment": {
+    "Name": "Отрезок линии",
+    "Tooltip": "Горячие клавиши инструмента «Отрезок линии» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.rectangle": {
+    "Name": "Прямоугольник",
+    "Tooltip": "Горячие клавиши инструмента «Прямоугольник» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.ellipse": {
+    "Name": "Эллипс",
+    "Tooltip": "Горячие клавиши инструмента «Эллипс» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.paintbrush": {
+    "Name": "Кисть",
+    "Tooltip": "Горячие клавиши инструмента «Кисть» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.blobbrush": {
+    "Name": "Мягкая кисть",
+    "Tooltip": "Горячие клавиши инструмента «Мягкая кисть» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.shaper": {
+    "Name": "Формовщик",
+    "Tooltip": "Горячие клавиши инструмента «Формовщик» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.pencil": {
+    "Name": "Карандаш",
+    "Tooltip": "Горячие клавиши инструмента «Карандаш» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.eraser": {
+    "Name": "Ластик",
+    "Tooltip": "Горячие клавиши инструмента «Ластик» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.scissors": {
+    "Name": "Ножницы",
+    "Tooltip": "Горячие клавиши инструмента «Ножницы» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.rotate": {
+    "Name": "Поворот",
+    "Tooltip": "Горячие клавиши инструмента «Поворот» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.reflect": {
+    "Name": "Отражение",
+    "Tooltip": "Горячие клавиши инструмента «Отражение» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.scale": {
+    "Name": "Масштабирование",
+    "Tooltip": "Горячие клавиши инструмента «Масштабирование» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.width": {
+    "Name": "Ширина",
+    "Tooltip": "Горячие клавиши инструмента «Ширина» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.freetransform": {
+    "Name": "Свободное трансформирование",
+    "Tooltip": "Горячие клавиши инструмента «Свободное трансформирование» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.shapebuilder": {
+    "Name": "Создание формы",
+    "Tooltip": "Горячие клавиши инструмента «Создание формы» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.livepaintbucket": {
+    "Name": "Живое закрашивание",
+    "Tooltip": "Горячие клавиши инструмента «Живое закрашивание» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.perspectivegrid": {
+    "Name": "Перспективная сетка",
+    "Tooltip": "Горячие клавиши инструмента «Перспективная сетка» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.mesh": {
+    "Name": "Меш-сетка",
+    "Tooltip": "Горячие клавиши инструмента «Меш-сетка» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.gradient": {
+    "Name": "Градиент",
+    "Tooltip": "Горячие клавиши инструмента «Градиент» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.eyedropper": {
+    "Name": "Пипетка",
+    "Tooltip": "Горячие клавиши инструмента «Пипетка» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.blend": {
+    "Name": "Смешивание",
+    "Tooltip": "Горячие клавиши инструмента «Смешивание» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.symbolsprayer": {
+    "Name": "Распылитель символов",
+    "Tooltip": "Горячие клавиши инструмента «Распылитель символов» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.columngraph": {
+    "Name": "Столбчатая диаграмма",
+    "Tooltip": "Горячие клавиши инструмента «Столбчатая диаграмма» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.artboard": {
+    "Name": "Холст",
+    "Tooltip": "Горячие клавиши инструмента «Холст» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.slice": {
+    "Name": "Слайс",
+    "Tooltip": "Горячие клавиши инструмента «Слайс» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.hand": {
+    "Name": "Рука",
+    "Tooltip": "Горячие клавиши инструмента «Рука» в Illustrator"
+  },
+  "com.hotspot.streamdock.hotkey.ai.zoom": {
+    "Name": "Масштаб",
+    "Tooltip": "Горячие клавиши инструмента «Масштаб» в Illustrator"
+  }
+}

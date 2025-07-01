@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Explorer Scratch Pad Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@master/src/rangeTooltip.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@master/src/rangeTooltip.js"></script>
+    <script src="WindowsExplorer.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Для обратной связи <span class="linkspan" onclick="openWebsite()">https://BarRaider.com</span></summary>
+        </details>
+        <details class="message">
+            <summary>Для получения инструкций по использованию этого действия <span class="linkspan"> НАЖМИТЕ ЗДЕСЬ</span></summary>
+			<p>1. Откройте проводник Windows и перейдите в каталог, который вы хотите сохранить</p>
+			<p>2. Пока проводник является активным окном, нажмите и удерживайте эту клавишу Stream Deck, пока не отобразится имя каталога</p>
+			<p>3. Теперь нажимайте коротко каждый раз, когда вы хотите увидеть этот каталог</p>
+			<p>4. Повторяйте шаги 1–2 каждый раз, когда вы хотите изменить сохраненный каталог</p>
+        </details>
+        <div type="radio" class="sdpi-item" id="dvShortPressAction">
+            <div class="sdpi-item-label">Действия при коротком нажатии</div>
+            <div class="sdpi-item-value ">
+                <div class="sdpi-item-child">
+                    <input id="shortPressOpenExplorer" class="sdProperty sdCheckbox" type="radio" name="shortPress" checked oninput="setSettings()">
+                    <label for="shortPressOpenExplorer" class="sdpi-item-label"><span></span>Открыть проводник</label>
+                </div>
+                <div class="sdpi-item-child">
+                    <input id="shortPressCopyToClipboard" class="sdProperty sdCheckbox" type="radio" name="shortPress" checked oninput="setSettings()">
+                    <label for="shortPressCopyToClipboard" class="sdpi-item-label"><span></span>Скопировать путь</label>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div type="checkbox" class="sdpi-item" id="dvLockSelection">
+            <div class="sdpi-item-label">Lock Selection</div>
+            <div class="sdpi-item-value">
+                <input id="lockSelection" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="lockSelection" class="sdpi-item-label"><span></span>Блокировка выбора (отключить долгое нажатие)</label>
+            </div>
+        </div>
+        <details class="message">
+            <summary>Пока включена функция «Блокировка выбора», вы не сможете изменить выбранную папку.</summary>
+        </details>
+        <hr />
+        <div type="checkbox" class="sdpi-item" id="dvSoundOnChange">
+            <div class="sdpi-item-label">Sound</div>
+            <div class="sdpi-item-value">
+                <input id="playSoundOnSet" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="playSoundOnSet" class="sdpi-item-label"><span></span>Воспроизвести звук при установке новой папки</label>
+            </div>
+        </div>
+        <div id="dvSoundOnSetSettings">
+            <div class="sdpi-item" id="dvPlaybackDevices">
+                <div class="sdpi-item-label">Устройства воспроизведения</div>
+                <select class="sdpi-item-value select sdProperty sdList" id="playbackDevices" oninput="setSettings()" sdListTextProperty="name" sdListValueProperty="name" sdValueField="playbackDevice"></select>
+            </div>
+            <div class="sdpi-item" id="dvSoundFile">
+                <div class="sdpi-item-label">Звуковой файл</div>
+                <div class="sdpi-item-group file" id="filepickergroup">
+                    <input class="sdpi-item-value sdProperty sdFile" type="file" id="playSoundOnSetFile" accept=".wav, .mp3, .ogg, .wma, .aac, .mp4" oninput="setSettings()">
+                    <label class="sdpi-file-info " for="playSoundOnSetFile" id="playSoundOnSetFileFilename">Нет файла...</label>
+                    <label class="sdpi-file-label" for="playSoundOnSetFile">Выбор файла...</label>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div type="range" class="sdpi-item sdShowTooltip" id="dvLongKeypressTime">
+            <div class="sdpi-item-label" id="longKeypressTimeTitle">Долгое нажатие клавиши</div>
+            <div class="sdpi-item-value">
+                <span class="clickable" value="150">150</span>
+                <input type="range" min="150" max="1000" value=150 list="numbers" data-suffix=" ms" class="sdProperty" id="longKeypressTime" oninput="setSettings()">
+                <span class="clickable" value="1000">1000</span>
+                <datalist id="numbers">
+                    <option>1000</option>
+                </datalist>
+                <label for="longKeypressTime" class="rangeLabel"></label>
+            </div>
+        </div>
+        <div class="sdpi-info-label hidden" style="top: -1000;" value="">Подсказка</div>
+        <div class="sdpi-item" id="dvEncoding">
+            <div class="sdpi-item-label">Кодовая страница кодировки (необязательно)</div>
+            <input class="sdpi-item-value sdProperty" placeholder="iso-8859-1" value="" id="encoding" oninput="setSettings()">
+        </div>
+    </div>
+</body>
+</html>

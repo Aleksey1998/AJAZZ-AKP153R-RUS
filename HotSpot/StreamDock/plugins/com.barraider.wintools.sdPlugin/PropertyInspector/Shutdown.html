@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Shutdown Action Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@master/src/rangeTooltip.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/rangeTooltip.js"></script>
+
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Для обратной связи напишите на <span class="linkspan" onclick="openWebsite()">https://BarRaider.com</span></summary>
+        </details>
+        <div class="sdpi-item" id="dvActionType">
+            <div class="sdpi-item-label">Action</div>
+            <select class="sdpi-item-value select sdProperty" id="actionType" oninput="setSettings()">
+                <option value="0">Выключить</option>
+                <option value="1">Перезагрузить</option>
+                <option value="2">Сон</option>
+                <option value="3">Гибернация</option>
+            </select>
+        </div>
+        <div type="range" class="sdpi-item sdShowTooltip" id="dvDelay">
+            <div class="sdpi-item-label" id="volumeLabel">Задержка</div>
+            <div class="sdpi-item-value">
+                <span class="clickable" value="0">0</span>
+                <input type="range" min="0" max="600" value=1 list="numbers" data-suffix=" seconds" class="sdProperty" id="delay" oninput="setSettings()">
+                <span class="clickable" value="600">600</span>
+                <label for="fadeLength" class="rangeLabel"></label>
+            </div>
+        </div>
+        <div class="sdpi-info-label hidden" style="top: -1000;" value="">Подсказка</div>
+    </div>
+</body>
+</html>

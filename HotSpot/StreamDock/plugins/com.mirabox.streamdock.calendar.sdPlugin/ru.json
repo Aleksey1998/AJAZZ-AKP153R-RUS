@@ -1,0 +1,10 @@
+{
+  "Localization": {},
+  "Name": "Календарь",
+  "Category": "Календарь",
+  "Description": "Запрос информации о сегодняшней дате",
+  "com.mirabox.streamdock.calendar.action1": {
+    "Name": "Календарь",
+    "Tooltip": "Информация дня"
+  }
+}

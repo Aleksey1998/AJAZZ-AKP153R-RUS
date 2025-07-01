@@ -1,0 +1,663 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/noicon",
+      "Name": "Display Action",
+      "States": [
+        {
+          "Image": "Images/noicon",
+          "TitleAlignment": "middle",
+          "FontSize": "13",
+          "TitleColor": "White"
+
+        }
+      ],
+      "VisibleInActionsList": false,
+      "SupportedInMultiActions": false,
+      "Tooltip": "Display Action",
+      "UUID": "com.barraider.wintools.displayaction"
+    },
+    {
+      "Icon": "Images/mixerIcon",
+      "Name": "Аудио Микшер",
+      "States": [
+        {
+          "Image": "Images/mixerAction",
+          "TitleAlignment": "middle",
+          "FontSize": "18",
+          "TitleColor": "Yellow"
+
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Modify volume levels for a specific application",
+      "UUID": "com.barraider.wintools.appaudiomixer",
+      "PropertyInspectorPath": "PropertyInspector/AppAudioMixer.html"
+    },
+    {
+      "Icon": "Images/deviceAudioIcon",
+      "Name": "Устройство воспроизведения",
+      "States": [
+        {
+          "Image": "Images/deviceAudioAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Sets the playback device for a specific application",
+      "UUID": "com.barraider.wintools.appplayback",
+      "PropertyInspectorPath": "PropertyInspector/AppPlayback.html"
+    },
+    {
+      "Icon": "Images/appSoundIcon",
+      "Name": "Мут звука в приложении",
+      "States": [
+        {
+          "Image": "Images/appSoundAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "DisableCaching": true,
+      "Tooltip": "Mutes/Unmutes a specific application",
+      "UUID": "com.barraider.wintools.appmute",
+      "PropertyInspectorPath": "PropertyInspector/AppMuteToggle.html"
+    },
+    {
+      "Icon": "Images/appSoundIcon",
+      "Name": "Громкость приложения",
+      "States": [
+        {
+          "Image": "Images/appSoundAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+        }
+      ],
+      "Controllers": [ "Keypad", "Encoder" ],
+      "Encoder": {
+        "layout": "volumeAdjustDialLayout.json",
+        "TriggerDescription": {
+          "Rotate": "Increase/Decrease",
+          "Push": "Toggle mute"
+        }
+      },
+      "SupportedInMultiActions": true,
+      "Tooltip": "Modify volume levels for a specific application",
+      "UUID": "com.barraider.wintools.appvolumeadjust",
+      "PropertyInspectorPath": "PropertyInspector/AppVolumeAdjuster.html"
+    },
+    {
+      "Icon": "Images/appSoundIcon",
+      "Name": "Задать громкость приложения",
+      "States": [
+        {
+          "Image": "Images/appSoundAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Set (or fade) the volume of an application to a specific level",
+      "UUID": "com.barraider.wintools.appvolumeset",
+      "PropertyInspectorPath": "PropertyInspector/AppVolumeSet.html"
+    },
+    {
+      "Icon": "Images/soundIcon",
+      "Name": "Аудио устройства/Заглушение микро",
+      "States": [
+        {
+          "Image": "Images/soundAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "DisableCaching": true,
+      "Tooltip": "Вкл/выкл воспроизводящих/записывающих устройств",
+      "UUID": "com.barraider.wintools.audiomute",
+      "PropertyInspectorPath": "PropertyInspector/AudioDeviceMuteToggle.html"
+    },
+    {
+      "Icon": "Images/soundIcon",
+      "Name": "Регулировка громкости аудиоустройства",
+      "States": [
+        {
+          "Image": "Images/soundAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+
+        }
+      ],
+      "Controllers": [ "Keypad", "Encoder" ],
+      "Encoder": {
+        "layout": "volumeAdjustDialLayout.json",
+        "TriggerDescription": {
+          "Rotate": "Increase/Decrease",
+          "Push": "Toggle mute"
+        }
+      },
+      "SupportedInMultiActions": true,
+      "Tooltip": "Modify volume levels for a playback/recording device",
+      "UUID": "com.barraider.wintools.audiovolumeadjust",
+      "PropertyInspectorPath": "PropertyInspector/AudioDeviceVolumeAdjuster.html"
+    },
+    {
+      "Icon": "Images/soundIcon",
+      "Name": "Задать громкость оборудования",
+      "States": [
+        {
+          "Image": "Images/soundAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Set (or fade) the volume of a playback/recording device to a specific level",
+      "UUID": "com.barraider.wintools.audiovolumeset",
+      "PropertyInspectorPath": "PropertyInspector/AudioDeviceVolumeSet.html"
+    },
+    {
+      "Icon": "Images/btIcon",
+      "Name": "Bluetooth управление",
+      "States": [
+        {
+          "Image": "Images/btAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "10",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Connect your BT devices and see their status",
+      "UUID": "com.barraider.wintools.btcontrol",
+      "PropertyInspectorPath": "PropertyInspector/BTControl.html"
+    },
+    {
+      "Icon": "Images/bluetoothIcon",
+      "Name": "Bluetooth/Wifi переключатель",
+      "States": [
+        {
+          "Image": "Images/bluetoothAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12",
+          "Name": "Переключатель"
+        },
+        {
+          "Name": "Вкл",
+          "OnlyForMultiAction": true
+        },
+        {
+          "Name": "Выкл",
+          "OnlyForMultiAction": true
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Turns your Bluetooth/Wifi on or off",
+      "UUID": "com.barraider.wintools.bluetooth",
+      "PropertyInspectorPath": "PropertyInspector/BluetoothToggle.html"
+    },
+    {
+      "Icon": "Images/deviceDefaultIcon",
+      "Name": "Устройства звука по умолчанию",
+      "States": [
+        {
+          "Image": "Images/deviceDefaultAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Sets the default playback or recording device",
+      "UUID": "com.barraider.wintools.defaultaudiodevice",
+      "PropertyInspectorPath": "PropertyInspector/DefaultAudioDevice.html"
+    },
+    {
+      "Icon": "Images/driveIcon",
+      "Name": "Информация о диске",
+      "States": [
+        {
+          "Image": "Images/driveAction",
+          "TitleAlignment": "middle",
+          "FontSize": "10"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Shows information about your disk drives",
+      "UUID": "com.barraider.wintools.driveinfo",
+      "PropertyInspectorPath": "PropertyInspector/DriveInfo.html"
+    },
+    {
+      "Icon": "Images/cloudIcon",
+      "Name": "IP чекер",
+      "States": [
+        {
+          "Image": "Images/cloudAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UserTitleEnabled": false,
+      "Tooltip": "Shows your current ip",
+      "UUID": "com.barraider.wintools.ip",
+      "PropertyInspectorPath": "PropertyInspector/IP.html"
+    },
+    {
+      "Icon": "Images/keyIcon",
+      "Name": "Язык Клавиатуры",
+      "States": [
+        {
+          "Image": "Images/keyAction",
+          "TitleAlignment": "top",
+          "FontSize": "10"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "UserTitleEnabled": false,
+      "Tooltip": "Shows and changes the current keyboard input language",
+      "UUID": "com.barraider.wintools.keyboardlang",
+      "PropertyInspectorPath": "PropertyInspector/KeyboardLanguage.html"
+    },
+    {
+      "Icon": "Images/keyIcon",
+      "Name": "LED подсветка Клавиатуры",
+      "States": [
+        {
+          "Image": "Images/keyAction",
+          "TitleAlignment": "middle",
+          "FontSize": "18"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "DisableCaching": true,
+      "Tooltip": "Displays and locks the NumLock, CapsLock and ScrollLock status",
+      "UUID": "com.barraider.wintools.keyboardleds",
+      "PropertyInspectorPath": "PropertyInspector/KeyboardLeds.html"
+    },
+    {
+      "Icon": "Images/keyLockIcon",
+      "Name": "Зажать Caps/Num/Scroll",
+      "States": [
+        {
+          "Image": "Images/keyLockAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "15",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "DisableCaching": true,
+      "Tooltip": "Displays and changes an individual NumLock/CapsLock/ScrollLock status",
+      "UUID": "com.barraider.wintools.keyboardkeytoggle",
+      "PropertyInspectorPath": "PropertyInspector/KeyboardKeyToggle.html"
+    },
+    {
+      "Icon": "Images/copyIcon",
+      "Name": "Бекап файла",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Copies the latest copy in a directory to a set location",
+      "UUID": "com.barraider.wintools.latestfilecopy",
+      "PropertyInspectorPath": "PropertyInspector/LatestFileCopy.html"
+    },
+    {
+      "Icon": "Images/lockIcon",
+      "Name": "Блокировка учётки",
+      "States": [
+        {
+          "Image": "Images/lockAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Locks your computer",
+      "UUID": "com.barraider.wintools.lock"
+    },
+    {
+      "Icon": "Images/multiClipIcon",
+      "Name": "Multi Clip",
+      "States": [
+        {
+          "Image": "Images/multiClipAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12",
+          "Name": "Нажмите клавишу"
+        },
+        {
+          "Name": "Долгое нажатие",
+          "OnlyForMultiAction": true
+        },
+        {
+          "Name": "Очистить все Multi Clips",
+          "OnlyForMultiAction": true
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Each Multi Clip key is it's own dedicated clipboard",
+      "UUID": "com.barraider.wintools.multiclip",
+      "PropertyInspectorPath": "PropertyInspector/MultiClip.html"
+    },
+    {
+      "Icon": "Images/multiClipClearIcon",
+      "Name": "Очистка Multi Clip",
+      "States": [
+        {
+          "Image": "Images/multiClipClearAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12",
+          "Name": "Нажмите клавишу"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Clear one or all Multi Clip keys",
+      "UUID": "com.barraider.wintools.multiclipclear",
+      "PropertyInspectorPath": "PropertyInspector/MultiClipClear.html"
+    },
+    {
+      "Icon": "Images/monitorBrightnessIcon",
+      "Name": "Яркость монитора",
+      "States": [
+        {
+          "Image": "Images/monitorBrightnessAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "9"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Sets the primary monitor",
+      "UUID": "com.barraider.wintools.monitorbrightnessset",
+      "PropertyInspectorPath": "PropertyInspector/MonitorBrightnessSet.html"
+    },
+    {
+      "Icon": "Images/projectionIcon",
+      "Name": "Проекция на несколько мониторов",
+      "States": [
+        {
+          "Image": "Images/projectionAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Sets the multi-monitor projection mode (Extend, Duplicate, Single Screen)",
+      "UUID": "com.barraider.wintools.projection",
+      "PropertyInspectorPath": "PropertyInspector/Projection.html"
+    },
+    {
+      "Icon": "Images/cloudIcon",
+      "Name": "Информация Сетевой карты",
+      "States": [
+        {
+          "Image": "Images/cloudAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Shows if your network card is enabled/disabled (useful to check if VPN is enabled)",
+      "UUID": "com.barraider.wintools.networkcard",
+      "PropertyInspectorPath": "PropertyInspector/NetworkCard.html"
+    },
+    {
+      "Icon": "Images/notificationIcon",
+      "Name": "Нотификации",
+      "States": [
+        {
+          "Image": "Images/notificationAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Pops up a custom notification",
+      "UUID": "com.barraider.wintools.notification",
+      "PropertyInspectorPath": "PropertyInspector/NotificationToast.html"
+    },
+    {
+      "Icon": "Images/powerIcon",
+      "Name": "План электропитания",
+      "States": [
+        {
+          "Image": "Images/powerAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "DisableCaching": true,
+      "Tooltip": "Allows you to switch between the various Windows power plans",
+      "UUID": "com.barraider.wintools.powerplanswitcher",
+      "PropertyInspectorPath": "PropertyInspector/PowerPlanSwitcher.html"
+    },
+    {
+      "Icon": "Images/cloudIcon",
+      "Name": "Ping",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "DisableCaching": true,
+      "UserTitleEnabled": false,
+      "Tooltip": "Pings servers and shows latency on Stream Deck",
+      "UUID": "com.barraider.wintools.ping",
+      "PropertyInspectorPath": "PropertyInspector/Ping.html"
+    },
+    {
+      "Icon": "Images/monitorIcon",
+      "Name": "Основной монитор",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Sets the primary monitor",
+      "UUID": "com.barraider.wintools.primarymonitor",
+      "PropertyInspectorPath": "PropertyInspector/PrimaryMonitor.html"
+    },
+    {
+      "Icon": "Images/gearsIcon",
+      "Name": "Служба Старт/Стоп",
+      "States": [
+        {
+          "Image": "Images/serviceAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Starts/Stops a Windows Service",
+      "UUID": "com.barraider.wintools.service",
+      "PropertyInspectorPath": "PropertyInspector/WindowsService.html"
+    },
+    {
+      "Icon": "Images/shutdownIcon",
+      "Name": "Выкл/Перезагрузить ПК",
+      "States": [
+        {
+          "Image": "Images/shutdownAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Shutdowns/Restarts/Sleeps your computer",
+      "UUID": "com.barraider.wintools.shutdown",
+      "PropertyInspectorPath": "PropertyInspector/Shutdown.html"
+    },
+    {
+      "Icon": "Images/uptimeIcon",
+      "Name": "Счётчик времени работы",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "11"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "UserTitleEnabled": false,
+      "Tooltip": "Shows the system uptime of your PC",
+      "UUID": "com.barraider.wintools.uptime",
+      "PropertyInspectorPath": "PropertyInspector/Uptime.html"
+    },
+    {
+      "Icon": "Images/vdIcon",
+      "Name": "Виртуальный рабочий стол - Создать",
+      "States": [
+        {
+          "Image": "Images/vdCreateAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "10",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Creates a new Virtual Desktop",
+      "UUID": "com.barraider.wintools.vdcreate",
+      "PropertyInspectorPath": "PropertyInspector/VDCreate.html"
+    },
+    {
+      "Icon": "Images/vdIcon",
+      "Name": "Виртуальный рабочий стол - Удалить",
+      "States": [
+        {
+          "Image": "Images/vdDeleteAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "10",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Deletes an existing Virtual Desktop",
+      "UUID": "com.barraider.wintools.vddelete",
+      "PropertyInspectorPath": "PropertyInspector/VDDelete.html"
+    },
+    {
+      "Icon": "Images/vdIcon",
+      "Name": "Виртуальный рабочий стол - показать тек.",
+      "States": [
+        {
+          "Image": "Images/vdShowAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "10",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Shows name of current Virtual Desktop",
+      "UUID": "com.barraider.wintools.vdshow"
+    },
+    {
+      "Icon": "Images/vdIcon",
+      "Name": "Выбрать Виртуальный рабочий стол",
+      "States": [
+        {
+          "Image": "Images/vdSwitchAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "10",
+          "TitleColor": "White"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "Switches to a Virtual Desktop",
+      "UUID": "com.barraider.wintools.vdswitch",
+      "PropertyInspectorPath": "PropertyInspector/VDSwitch.html"
+    },
+    {
+      "Icon": "Images/usbIcon",
+      "Name": "USB контроллер",
+      "States": [
+        {
+          "Image": "Images/usbAction",
+          "TitleAlignment": "bottom",
+          "FontSize": "10",
+          "TitleColor": "White"
+        }
+      ],
+      "Tooltip": "Enable/Disable USB devices and see their status",
+      "UUID": "com.barraider.wintools.usbcontrol",
+      "PropertyInspectorPath": "PropertyInspector/UsbControl.html"
+    },
+    {
+      "Icon": "Images/folderIcon",
+      "Name": "Журнал проводника системы",
+      "States": [
+        {
+          "Image": "Images/folderAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "UserTitleEnabled": false,
+      "Tooltip": "Stores the current folder in your Windows Explorer so you can quickly open it later",
+      "UUID": "com.barraider.wintools.windowsexplorer",
+      "PropertyInspectorPath": "PropertyInspector/WindowsExplorer.html"
+    }
+  ],
+  "Author": "BarRaider",
+  "Description": "Управляйте Windows из Stream Deck. Управляйте громкостью приложений или устройств, включайте и выключайте Bluetooth/Wi-Fi, используйте «Explorer Scratch Pad» для быстрого переключения между общими папками, «Multi-Clip» превращает каждую клавишу в отдельный буфер обмена, пингуйте серверы и смотрите задержку, меняйте планы электропитания, останавливайте/запускайте/перезапускайте службы Windows, поддержка Virtual Desktop и многое другое.",
+  "Name": "Win Tools",
+  "Icon": "Images/pluginIcon",
+  "URL": "https://barraider.com/",
+  "Version": "2.0.0",
+  "CodePath": "com.barraider.wintools",
+  "Category": "Win Tools [BarRaider]",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Profiles": [
+    {
+      "Name": "WinTools",
+      "ReadOnly": true,
+      "DeviceType": 0,
+      "DontAutoSwitchWhenInstalled": true
+    },
+    {
+      "Name": "WinToolsXL",
+      "ReadOnly": true,
+      "DeviceType": 2,
+      "DontAutoSwitchWhenInstalled": true
+    },
+    {
+      "Name": "WinToolsMobile",
+      "ReadOnly": true,
+      "DeviceType": 3,
+      "DontAutoSwitchWhenInstalled": true
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "5.3"
+  }
+}

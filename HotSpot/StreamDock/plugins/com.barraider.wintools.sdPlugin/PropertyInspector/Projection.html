@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Multi-Screen Projection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Для обратной связи напишите на <span class="linkspan" onclick="openWebsite()">https://BarRaider.com</span></summary>
+        </details>
+        <div class="sdpi-item" id="dvProjection">
+            <div class="sdpi-item-label">Режим</div>
+            <select class="sdpi-item-value select sdProperty" id="mode" oninput="setSettings()">
+				<option value="0">- ВЫБЕРИТЕ РЕЖИМ -</option>
+				<option value="1">Только экран ПК</option>
+				<option value="2">Дублировать</option>
+				<option value="3">Расширить</option>
+				<option value="4">Только второй экран</option>
+            </select>
+        </div>
+        <details class="message">
+            <summary>Устанавливает режим проецирования (Win+P) из потоковой деки</summary>
+        </details>
+    </div>
+</body>
+</html>

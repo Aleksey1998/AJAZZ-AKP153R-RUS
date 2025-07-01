@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>Default Audio Device Settings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdpi.css">
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+    <script src="DefaultAudioDevice.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Для обратной связи напишите на <span class="linkspan" onclick="openWebsite()">https://BarRaider.com</span></summary>
+        </details>
+        <div class="sdpi-item" id="dvDeviceType">
+            <div class="sdpi-item-label">Тип устройства</div>
+            <select class="sdpi-item-value select sdProperty" id="deviceType" oninput="setSettings()">
+                <option value="0">Воспроизведение</option>
+                <option value="1">Запись</option>
+            </select>
+        </div>
+        <div class="sdpi-item" id="dvDefaultDevice">
+            <div class="sdpi-item-label">Устройства по умолчанию</div>
+            <select class="sdpi-item-value select sdProperty sdList" id="devices" oninput="setSettings()" sdListTextProperty="name" sdListValueProperty="name" sdValueField="device"></select>
+        </div>
+        <div type="radio" class="sdpi-item" id="rdDeviceType">
+            <div class="sdpi-item-label">Тип устройства</div>
+            <div class="sdpi-item-value ">
+                <div class="sdpi-item-child">
+                    <input id="playbackDevice" class="sdProperty sdCheckbox" type="radio" name="rdDeviceType" checked oninput="setSettings()">
+                    <label for="playbackDevice" class="sdpi-item-label"><span></span>Устройства воспроизведения по умолчанию</label>
+                </div>
+                <div class="sdpi-item-child">
+                    <input id="commDevice" class="sdProperty sdCheckbox" type="radio" name="rdDeviceType" oninput="setSettings()">
+                    <label for="commDevice" class="sdpi-item-label"><span></span>Устройство общения по умолчанию</label>
+                </div>
+                <div class="sdpi-item-child">
+                    <input id="commAndPlaybackDevice" class="sdProperty sdCheckbox" type="radio" name="rdDeviceType" oninput="setSettings()">
+                    <label for="commAndPlaybackDevice" class="sdpi-item-label"><span></span>Воспроизведение + Общение</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
